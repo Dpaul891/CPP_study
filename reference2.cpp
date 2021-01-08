@@ -35,6 +35,6 @@ int main()
     int i = 3;
     f(i*3);
 
-    f2().i = 10;
+    // f2().i = 10; // vscode 里面是error， 老师上课用g++编译是ok的
     return 0;
 }
