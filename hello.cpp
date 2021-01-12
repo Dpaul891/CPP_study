@@ -1,12 +1,21 @@
 #include<iostream>
+#include<iomanip>
 using namespace std;
-void f(){
-    static int x = 10;
+void f(int){
+    cout << "hello" << endl;
 }
+ostream& tab(ostream& out){
+  return out << "111";
+}
+
 int main()
 {
-    double a = 3.3;
-    cout << a << endl;
-    cout << int(a) << endl;
+    int n;
+    cin >> n;
+    cout << hex << n << endl;
+    cout << setprecision(2) << 1000.243 << endl;
+    cout << setw(20) << "OK" << endl;
+
+    cout << "Hello" << tab << "World" << endl;
     return 0;
 }
